@@ -1,0 +1,6 @@
+# brax==0.0.10
+git+https://github.com/google/brax.git@0ebb33219033d324bc56ebf80a6d6702c694951b
+jax[cuda111]<=0.2.21
+flax==0.3.6
+optax==0.0.9
+tensorflow-probability==0.14.0

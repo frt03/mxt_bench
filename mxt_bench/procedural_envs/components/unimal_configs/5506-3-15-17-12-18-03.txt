@@ -1,0 +1,517 @@
+bodies {
+  name: "torso_0"
+  colliders {
+    position {
+    }
+    sphere {
+      radius: 0.1
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 3.7699113
+}
+bodies {
+  name: "limb_end_4"
+  colliders {
+    position {
+      x: -0.125
+      z: -0.125
+    }
+    rotation {
+      x: 180.0
+      y: -45.0
+      z: 180.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.45355338
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 3.3004005
+}
+bodies {
+  name: "d1_limb_12"
+  colliders {
+    position {
+      x: 0.16
+      y: 0.16
+    }
+    rotation {
+      x: -90.0
+      y: 45.0
+      z: -45.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.55254835
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.077905
+}
+bodies {
+  name: "limb_end_2"
+  colliders {
+    position {
+      x: -0.225
+    }
+    rotation {
+      y: -90.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.55
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.0578904
+}
+bodies {
+  name: "d2_limb_16"
+  colliders {
+    position {
+      x: 0.09
+      z: -0.09
+    }
+    rotation {
+      x: 180.0
+      y: 45.0
+      z: 180.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.35455844
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 2.522896
+}
+bodies {
+  name: "limb_end_0"
+  colliders {
+    position {
+      x: 0.225
+    }
+    rotation {
+      x: -0.0
+      y: 90.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.55
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.0578904
+}
+bodies {
+  name: "d1_limb_13"
+  colliders {
+    position {
+      x: 0.16
+      y: -0.16
+    }
+    rotation {
+      x: 90.0
+      y: 45.0
+      z: 45.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.55254835
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.077905
+}
+bodies {
+  name: "limb_end_3"
+  colliders {
+    position {
+      x: -0.225
+    }
+    rotation {
+      y: -90.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.55
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.0578904
+}
+bodies {
+  name: "d2_limb_17"
+  colliders {
+    position {
+      x: 0.09
+      z: -0.09
+    }
+    rotation {
+      x: 180.0
+      y: 45.0
+      z: 180.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.35455844
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 2.522896
+}
+bodies {
+  name: "limb_end_1"
+  colliders {
+    position {
+      x: 0.225
+    }
+    rotation {
+      x: -0.0
+      y: 90.0
+    }
+    capsule {
+      radius: 0.05
+      length: 0.55
+    }
+  }
+  inertia {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+  mass: 4.0578904
+}
+joints {
+  name: "limbx_0"
+  stiffness: 5000.0
+  parent: "torso_0"
+  child: "limb_end_4"
+  parent_offset {
+    x: -0.03
+    z: -0.03
+  }
+  child_offset {
+    x: 0.04
+    z: 0.04
+  }
+  rotation {
+    y: 45.0
+  }
+  angular_damping: 15.0
+  angle_limit {
+    min: -30.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limbx_12"
+  stiffness: 5000.0
+  parent: "torso_0"
+  child: "d1_limb_12"
+  parent_offset {
+    x: 0.03
+    y: 0.03
+  }
+  child_offset {
+    x: -0.04
+    y: -0.04
+  }
+  rotation {
+    x: 19.47109
+    y: -44.999725
+    z: -45.0
+  }
+  angular_damping: 20.0
+  angle_limit {
+    max: 30.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limbx_14"
+  stiffness: 5000.0
+  parent: "d1_limb_12"
+  child: "limb_end_2"
+  parent_offset {
+    x: 0.18
+    y: 0.18
+  }
+  child_offset {
+    x: 0.05
+  }
+  rotation {
+    x: -0.0
+    y: 90.0
+  }
+  angular_damping: 20.0
+  angle_limit {
+    max: 30.0
+  }
+  angle_limit {
+    min: -30.0
+    max: 30.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limby_16"
+  stiffness: 5000.0
+  parent: "d1_limb_12"
+  child: "d2_limb_16"
+  parent_offset {
+    x: 0.32
+    y: 0.32
+  }
+  child_offset {
+    x: -0.04
+    z: 0.04
+  }
+  rotation {
+    y: -0.0
+    z: 90.0
+  }
+  angular_damping: 15.0
+  angle_limit {
+  }
+  angle_limit {
+    max: 30.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limbx_18"
+  stiffness: 5000.0
+  parent: "d2_limb_16"
+  child: "limb_end_0"
+  parent_offset {
+    x: 0.18
+    z: -0.18
+  }
+  child_offset {
+    x: -0.05
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 15.0
+  angle_limit {
+    min: -45.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limbx_13"
+  stiffness: 5000.0
+  parent: "torso_0"
+  child: "d1_limb_13"
+  parent_offset {
+    x: 0.03
+    y: -0.03
+  }
+  child_offset {
+    x: -0.04
+    y: 0.04
+  }
+  rotation {
+    x: -19.47109
+    y: -44.999725
+    z: 45.0
+  }
+  angular_damping: 20.0
+  angle_limit {
+    max: 30.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limbx_15"
+  stiffness: 5000.0
+  parent: "d1_limb_13"
+  child: "limb_end_3"
+  parent_offset {
+    x: 0.18
+    y: -0.18
+  }
+  child_offset {
+    x: 0.05
+  }
+  rotation {
+    x: -0.0
+    y: 90.0
+  }
+  angular_damping: 20.0
+  angle_limit {
+    max: 30.0
+  }
+  angle_limit {
+    min: -30.0
+    max: 30.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limby_17"
+  stiffness: 5000.0
+  parent: "d1_limb_13"
+  child: "d2_limb_17"
+  parent_offset {
+    x: 0.32
+    y: -0.32
+  }
+  child_offset {
+    x: -0.04
+    z: 0.04
+  }
+  rotation {
+    y: -0.0
+    z: 90.0
+  }
+  angular_damping: 15.0
+  angle_limit {
+  }
+  angle_limit {
+    max: 30.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+joints {
+  name: "limbx_19"
+  stiffness: 5000.0
+  parent: "d2_limb_17"
+  child: "limb_end_1"
+  parent_offset {
+    x: 0.18
+    z: -0.18
+  }
+  child_offset {
+    x: -0.05
+  }
+  rotation {
+    y: -90.0
+  }
+  angular_damping: 15.0
+  angle_limit {
+    min: -45.0
+  }
+  reference_rotation {
+    y: -0.0
+  }
+}
+actuators {
+  name: "limbx_0"
+  joint: "limbx_0"
+  strength: 150.0
+  torque {
+  }
+}
+actuators {
+  name: "limbx_12"
+  joint: "limbx_12"
+  strength: 200.0
+  torque {
+  }
+}
+actuators {
+  name: "limbx_14"
+  joint: "limbx_14"
+  strength: 200.0
+  torque {
+  }
+}
+actuators {
+  name: "limby_16"
+  joint: "limby_16"
+  strength: 150.0
+  torque {
+  }
+}
+actuators {
+  name: "limbx_18"
+  joint: "limbx_18"
+  strength: 150.0
+  torque {
+  }
+}
+actuators {
+  name: "limbx_13"
+  joint: "limbx_13"
+  strength: 200.0
+  torque {
+  }
+}
+actuators {
+  name: "limbx_15"
+  joint: "limbx_15"
+  strength: 200.0
+  torque {
+  }
+}
+actuators {
+  name: "limby_17"
+  joint: "limby_17"
+  strength: 150.0
+  torque {
+  }
+}
+actuators {
+  name: "limbx_19"
+  joint: "limbx_19"
+  strength: 150.0
+  torque {
+  }
+}
