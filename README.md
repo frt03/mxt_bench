@@ -1,15 +1,16 @@
 # A System for Morphology-Task Generalization via Unified Representation and Behavior Distillation
 
-[[arxiv]](https://arxiv.org/abs/2211.14296)
+Accepted to [ICLR2023](https://openreview.net/forum?id=HcUf-QwZeFh) (**notable-top-25%, Spotlight**) [[arxiv]](https://arxiv.org/abs/2211.14296) [[Website]](https://sites.google.com/view/control-graph)
+
 ### Citation
 If you use this codebase for your research, please cite the paper:
 
 ```
-@article{furuta2022asystem,
+@inproceedings{furuta2023asystem,
   title={A System for Morphology-Task Generalization via Unified Representation and Behavior Distillation},
   author={Hiroki Furuta and Yusuke Iwasawa and Yutaka Matsuo and Shixiang Shane Gu},
-  journal={arXiv preprint arXiv:2211.14296},
-  year={2022}
+  booktitle={International Conference on Learning Representations},
+  year={2023},
 }
 ```
 
@@ -40,7 +41,7 @@ CUDA_VISIBLE_DEVICES=0 python generate_behavior_from_qp.py --seed 0 --env ant_re
 
 6. Register `dataset_path` (path to saved observations) in [dataset_config.py](mxt_bench/procedural_envs/tasks/ant_reach/dataset_config.py) and [task_config.py](mxt_bench/procedural_envs/tasks/task_config.py).
 
-6. Train Transformer policy via multi-task behvior cloning:
+6. Train Transformer policy via multi-task behavior cloning:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1 python train_bc_transformer.py --task_name example --seed 0
 # zero-shot evaluation
